@@ -10,26 +10,28 @@ import SwiftUI
 struct TabBar: View {
     @State var currentTab = "house"
     var body: some View {
-        TabView(selection: $currentTab) {
-            Text("Home")
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .tag(tabs[0])
-                .background(Color("bg"))
-            
-            Text("Booking")
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .tag(tabs[1])
-                .background(Color("bg"))
-            
-            Text("Favourites")
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .tag(tabs[2])
-                .background(Color("bg"))
-            
-            Text("Settings")
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .tag(tabs[3])
-                .background(Color("bg"))
+        ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
+            TabView(selection: $currentTab) {
+                Text("Home")
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .tag(tabs[0])
+                    .background(Color("bg"))
+                
+                Text("Booking")
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .tag(tabs[1])
+                    .background(Color("bg"))
+                
+                Text("Favourites")
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .tag(tabs[2])
+                    .background(Color("bg"))
+                
+                Text("Settings")
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .tag(tabs[3])
+                    .background(Color("bg"))
+            }
         }
     }
 }
