@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F68E0A11256A8C9400AF560A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E0A10256A8C9400AF560A /* TabBar.swift */; };
+		F68E0A19256CCD7500AF560A /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E0A18256CCD7500AF560A /* TabButton.swift */; };
 		F6F339FB256A848A001BF8A7 /* Saladus_SwiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F339FA256A848A001BF8A7 /* Saladus_SwiftUiApp.swift */; };
 		F6F339FD256A848A001BF8A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F339FC256A848A001BF8A7 /* ContentView.swift */; };
 		F6F339FF256A848C001BF8A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F339FE256A848C001BF8A7 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		F68E0A10256A8C9400AF560A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		F68E0A18256CCD7500AF560A /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
 		F6F339F7256A8489001BF8A7 /* Saladus-SwiftUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Saladus-SwiftUi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F339FA256A848A001BF8A7 /* Saladus_SwiftUiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saladus_SwiftUiApp.swift; sourceTree = "<group>"; };
 		F6F339FC256A848A001BF8A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				F68E0A10256A8C9400AF560A /* TabBar.swift */,
+				F68E0A18256CCD7500AF560A /* TabButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F68E0A11256A8C9400AF560A /* TabBar.swift in Sources */,
+				F68E0A19256CCD7500AF560A /* TabButton.swift in Sources */,
 				F6F339FD256A848A001BF8A7 /* ContentView.swift in Sources */,
 				F6F339FB256A848A001BF8A7 /* Saladus_SwiftUiApp.swift in Sources */,
 			);
