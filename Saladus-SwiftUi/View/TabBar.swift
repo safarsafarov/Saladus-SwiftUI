@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TabBar: View {
     @State var currentTab = "house"
-    @State var animation: Namespace.ID
+    @Namespace var animation
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
             TabView(selection: $currentTab) {
@@ -34,8 +34,6 @@ struct TabBar: View {
                     .background(Color("bg"))
             }
             
-            // Csuom Tab Bar...
-            
             HStack(spacing: 0) {
                 ForEach(tabs,id: \.self){imnage in
                     TabButton(image: image, selected: $currentTab, animation: animation)
@@ -43,6 +41,9 @@ struct TabBar: View {
                     if image != tabs.last{Spacer(minLength: 0)}
                 }
             }
+            // Csuom Tab Bar...
+            
+            
         }
     }
 }
