@@ -15,6 +15,7 @@ struct TabBar: View {
         // hiding default tab bar...
         UITabBar.appearance().isHidden = true
     }
+    @State var safeArea = UIApplication.shared.windows.first?.safeAreaInsets
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
             TabView(selection: $currentTab) {
@@ -39,7 +40,7 @@ struct TabBar: View {
                     .background(Color("bg"))
             }
             
-            HStack(spacing: 0) {
+            HStack(spacing: 35) {
                 ForEach(tabs,id: \.self){image in
                     TabButton(image: image, selected: $currentTab, animation: animation)
                     
