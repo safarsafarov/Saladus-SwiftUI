@@ -43,11 +43,9 @@ struct TabBar: View {
             HStack(spacing: 35) {
                 ForEach(tabs,id: \.self){image in
                     TabButton(image: image, selected: $currentTab, animation: animation)
-                    
-                    if image != tabs.last{Spacer(minLength: 0)}
                 }
             }
-            .padding(.horizontal, 35)
+            .padding(.horizontal,35)
             .padding(.top)
             .padding(.bottom,safeArea?.bottom != 0 ? safeArea?.bottom : 15)
         }
