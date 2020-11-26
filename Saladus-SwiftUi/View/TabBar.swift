@@ -49,11 +49,9 @@ struct TabBar: View {
             }
             .padding(.horizontal, 35)
             .padding(.top)
-            .padding(.bottom)
-            // Csuom Tab Bar...
-            
-            
+            .padding(.bottom,safeArea?.bottom != 0 ? safeArea?.bottom : 15)
         }
+        .ignoresSafeArea(.all, edges: .bottom)
     }
 }
 
