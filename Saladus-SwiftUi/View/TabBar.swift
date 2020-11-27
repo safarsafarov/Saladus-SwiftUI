@@ -38,6 +38,7 @@ struct TabBar: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .tag(tabs[3])
                     .background(Color("bg"))
+                
             }
             
             HStack(spacing: 35) {
