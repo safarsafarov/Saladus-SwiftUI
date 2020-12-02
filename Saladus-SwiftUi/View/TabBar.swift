@@ -49,6 +49,9 @@ struct TabBar: View {
             .padding(.horizontal,35)
             .padding(.top)
             .padding(.bottom,safeArea?.bottom != 0 ? safeArea?.bottom : 15)
+            .background(
+                LinearGradient(gradient: .init(colors: [Color("g1"),Color("g2")]), startPoint: .top, endPoint: .bottom)
+            )
         }
         .ignoresSafeArea(.all, edges: .bottom)
     }
