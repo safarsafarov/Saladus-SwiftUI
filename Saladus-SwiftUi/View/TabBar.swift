@@ -51,6 +51,7 @@ struct TabBar: View {
             .padding(.bottom,safeArea?.bottom != 0 ? safeArea?.bottom : 15)
             .background(
                 LinearGradient(gradient: .init(colors: [Color("g1"),Color("g2")]), startPoint: .top, endPoint: .bottom)
+                    .clipShape(CustomCorner(corners: [.topLeft,.topRight]))
             )
         }
         .ignoresSafeArea(.all, edges: .bottom)
