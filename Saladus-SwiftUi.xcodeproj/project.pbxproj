@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F6263F272578E2D3004BF624 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6263F262578E2D3004BF624 /* CustomCorner.swift */; };
+		F6263F2C25791477004BF624 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6263F2B25791477004BF624 /* Home.swift */; };
 		F68E0A11256A8C9400AF560A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E0A10256A8C9400AF560A /* TabBar.swift */; };
 		F68E0A19256CCD7500AF560A /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E0A18256CCD7500AF560A /* TabButton.swift */; };
 		F6F339FB256A848A001BF8A7 /* Saladus_SwiftUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F339FA256A848A001BF8A7 /* Saladus_SwiftUiApp.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		F6263F262578E2D3004BF624 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
+		F6263F2B25791477004BF624 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		F68E0A10256A8C9400AF560A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		F68E0A18256CCD7500AF560A /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
 		F6F339F7256A8489001BF8A7 /* Saladus-SwiftUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Saladus-SwiftUi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +86,7 @@
 				F68E0A10256A8C9400AF560A /* TabBar.swift */,
 				F68E0A18256CCD7500AF560A /* TabButton.swift */,
 				F6263F262578E2D3004BF624 /* CustomCorner.swift */,
+				F6263F2B25791477004BF624 /* Home.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				F6263F272578E2D3004BF624 /* CustomCorner.swift in Sources */,
 				F68E0A19256CCD7500AF560A /* TabButton.swift in Sources */,
 				F6F339FD256A848A001BF8A7 /* ContentView.swift in Sources */,
+				F6263F2C25791477004BF624 /* Home.swift in Sources */,
 				F6F339FB256A848A001BF8A7 /* Saladus_SwiftUiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
