@@ -14,28 +14,40 @@ struct Home: View {
         
         VStack {
             
-            HStack{
-                
-                Button(action: {}) {
-                    Image(systemName: "rectangle.grid.2x2")
-                        .font(.title2)
-                        .foregroundColor(.white)
+            ZStack{
+                HStack{
+                    
+                    Button(action: {}) {
+                        Image(systemName: "rectangle.grid.2x2")
+                            .font(.title2)
+                            .foregroundColor(white)
+                    }
+                    
+                    Spacer()
+                    
+                    Button(action: {}) {
+                        Image(systemName: "magnifyingglass")
+                            .font(.title2)
+                            .foregroundColor(white)
+                    }
                 }
-                
-                Spacer()
-                
-                Button(action: {}) {
-                    Image(systemName: "magnifyingglass")
-                        .font(.title2)
-                        .foregroundColor(.white)
-                }
+                Text("Saladus")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
             }
             .padding([.horizontal, .bottom])
             .padding(.top,10)
             
             HStack {
                 Text("Special Offers")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(white)
+                
+                Spacer()
             }
+            .padding()
         }
     }
 }

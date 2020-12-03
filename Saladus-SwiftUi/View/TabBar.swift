@@ -10,39 +10,46 @@ import SwiftUI
 struct TabBar: View {
     @State var currentTab = "house"
     @Namespace var animation
-    
     init() {
-        // hiding default tab bar...
+        
+        // hiding default tab bar....
         UITabBar.appearance().isHidden = true
     }
+    // safe area values...
     @State var safeArea = UIApplication.shared.windows.first?.safeAreaInsets
     var body: some View {
+        
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
-            TabView(selection: $currentTab) {
+            
+            TabView(selection: $currentTab){
+                
                 Home(animation: animation)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .tag(tabs[0])
-                    .background(Color("bg"))
+                    .background(Color("bg").ignoresSafeArea())
                 
                 Text("Booking")
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .tag(tabs[1])
-                    .background(Color("bg"))
+                    .background(Color("bg").ignoresSafeArea())
                 
                 Text("Favourites")
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .tag(tabs[2])
-                    .background(Color("bg"))
+                    .background(Color("bg").ignoresSafeArea())
                 
                 Text("Settings")
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .tag(tabs[3])
-                    .background(Color("bg"))
-                
+                    .background(Color("bg").ignoresSafeArea())
             }
             
-            HStack(spacing: 35) {
+            // Custom Tab Bar....
+            
+            HStack(spacing: 35){
+                
                 ForEach(tabs,id: \.self){image in
+                    
                     TabButton(image: image, selected: $currentTab, animation: animation)
                 }
             }
@@ -50,6 +57,7 @@ struct TabBar: View {
             .padding(.top)
             .padding(.bottom,safeArea?.bottom != 0 ? safeArea?.bottom : 15)
             .background(
+            
                 LinearGradient(gradient: .init(colors: [Color("g1"),Color("g2")]), startPoint: .top, endPoint: .bottom)
                     .clipShape(CustomCorner(corners: [.topLeft,.topRight]))
             )
@@ -58,4 +66,4 @@ struct TabBar: View {
     }
 }
 
-var tabs = ["house", "book", "suit.heart", "person"]
+var tabs = ["house","book","suit.heart","person"]
