@@ -39,15 +39,48 @@ struct Home: View {
             .padding([.horizontal, .bottom])
             .padding(.top,10)
             
-            HStack {
-                Text("Special Offers")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .foregroundColor(white)
-                
-                Spacer()
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack {
+                    HStack {
+                        Text("Special Offers")
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                            .foregroundColor(white)
+                        
+                        Spacer()
+                    }
+                    .padding()
+                    
+                    HStack {
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text("Greek Salad")
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                            HStack {
+                                Text("Only Today")
+                                    .foregroundColor(white)
+                                Text("10%")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.white)
+                                Text("off")
+                                    .foregroundColor(white)
+                            }
+                            Text("$3.52")
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                        }
+                        Spacer(minLength: 5)
+                        
+                        Image("p2")
+                    }
+                    .padding([.vertical,.leading])
+                    .background(LinearGradient(gradient: .init(colors: [Color("g2"), Color("g2")]), startPoint: .top, endPoint: .bottom))
+                    .cornerRadius(25)
+                    .padding(.vertical,25)
+                    .padding(.trailing, 30)
+                }
+                .padding(.horizontal)
             }
-            .padding()
         }
     }
 }
