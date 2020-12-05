@@ -97,7 +97,9 @@ struct Home: View {
                     }
                 }
                 .padding()
+                .padding(.horizontal,4)
             }
         }
+        .padding(.bottom,100)
     }
 }

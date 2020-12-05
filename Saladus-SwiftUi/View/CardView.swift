@@ -38,7 +38,9 @@ struct CardView: View {
             }
             .padding(.horizontal)
         }
+        .padding(.bottom)
         .background(LinearGradient(gradient: .init(colors: [Color.white.opacity(0.1),Color.black.opacity(0.35)]), startPoint: .top, endPoint: .bottom))
         .cornerRadius(25)
+        .padding(.top,55)
     }
 }
